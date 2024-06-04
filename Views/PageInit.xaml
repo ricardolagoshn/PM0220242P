@@ -6,7 +6,18 @@
     
     
     <VerticalStackLayout>
-  
+
+
+        <Image Source="{Binding Persona.Foto}" 
+               HeightRequest="200" 
+               WidthRequest="200"  
+               Margin="20,0,20,0"
+               BackgroundColor="Azure"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               />
+
+        <Button Text="Tomaar Imagen" x:Name="btnfoto" Clicked="btnfoto_Clicked" />
 
         <Label Text="Nombres" Margin="20,0,20,0" VerticalOptions="Start" HorizontalOptions="Start"/>
         <Entry Text="{Binding Persona.Nombres}" MaxLength="100" Margin="20,0,20,0" x:Name="Nombres"/>
@@ -23,7 +34,7 @@
         <Label Text="Foto" Margin="20,0,20,0" VerticalOptions="Start" HorizontalOptions="Start"/>
         <Entry Text="{Binding Persona.Foto}" Margin="20,0,20,0" x:Name="Foto" />
 
-        <Image Source="{Binding Persona.Foto}" HeightRequest="200" WidthRequest="200"  Margin="20,0,20,0" />
+        
 
         <Button x:Name="btnaceptar" Text="Aceptar" Background="BlueViolet" TextColor="White" Clicked="btnaceptar_Clicked" />
 

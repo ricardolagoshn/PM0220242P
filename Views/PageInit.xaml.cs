@@ -22,4 +22,9 @@ public partial class PageInit : ContentPage
             await DisplayAlert("Aviso", "Registro ingresado con exito!!", "OK");
         }
     }
+
+    private void btnfoto_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
