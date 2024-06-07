@@ -2,7 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PM0220242P.Views.PageListPerson"
+             xmlns:conver="clr-namespace:PM0220242P.Controllers"
              Title="PageListPerson">
+
+    <ContentPage.Resources>
+        <conver:Base64ToImage x:Key="BaseString" />
+    </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Agregar" Clicked="ToolbarItem_Clicked" />
@@ -15,18 +20,46 @@
                         SelectionMode="Single"
                         SelectionChanged="listperson_SelectionChanged">
 
-            <CollectionView.ItemsLayout>
-                <LinearItemsLayout Orientation="Vertical"
-                                   ItemSpacing="15" />
-                
-            </CollectionView.ItemsLayout>
+           
 
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout>
-                        <Label Text="{Binding Nombres}" />
-                        <Label Text="{Binding Apellidos}" />
-                    </StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Frame HeightRequest="80"
+                               WidthRequest="80"
+                               CornerRadius="40"
+                               HorizontalOptions="Center"
+                               IsClippedToBounds="True"
+                               Padding="0"
+                               BorderColor="Gray"
+                               Margin="0,0,0,0">
+
+                            <Image Grid.Column="0"
+                                   x:Name="imagen"
+                                   Source="{Binding Foto, Converter={StaticResource BaseString}}"
+                                   Aspect="AspectFill"
+                                   HeightRequest="70"
+                                   WidthRequest="70" />
+
+                        </Frame>
+
+
+                        <StackLayout Grid.Column="1" VerticalOptions="Center">
+                            <Label Text="{Binding Nombres}" />
+                            <Label Text="{Binding Apellidos}" />
+                        </StackLayout>
+
+
+                    </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
                         

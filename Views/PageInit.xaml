@@ -15,6 +15,7 @@
                BackgroundColor="Azure"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
+               x:Name="FotoImage"
                />
 
         <Button Text="Tomaar Imagen" x:Name="btnfoto" Clicked="btnfoto_Clicked" />
@@ -30,11 +31,6 @@
 
         <Label Text="Telefono" Margin="20,0,20,0" VerticalOptions="Start" HorizontalOptions="Start"/>
         <Entry Text="{Binding Persona.Telefono}"  Margin="20,0,20,0" x:Name="Telefono" />
-
-        <Label Text="Foto" Margin="20,0,20,0" VerticalOptions="Start" HorizontalOptions="Start"/>
-        <Entry Text="{Binding Persona.Foto}" Margin="20,0,20,0" x:Name="Foto" />
-
-        
 
         <Button x:Name="btnaceptar" Text="Aceptar" Background="BlueViolet" TextColor="White" Clicked="btnaceptar_Clicked" />
 
