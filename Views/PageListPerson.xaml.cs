@@ -15,7 +15,8 @@ public partial class PageListPerson : ContentPage
 
     private void ToolbarItem_Clicked_1(object sender, EventArgs e)
     {
-       
+       var page = new Views.PageMap();
+        Navigation.PushAsync(page);
     }
 
     private void listperson_SelectionChanged(object sender, SelectionChangedEventArgs e)

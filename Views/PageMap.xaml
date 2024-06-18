@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM0220242P.Views.PageMap"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             Title="PageMap">
+    <VerticalStackLayout>
+        <Grid>
+            <maps:Map x:Name="mapa"
+                      MapType="Street"
+                      IsShowingUser="True"
+                      VerticalOptions="FillAndExpand" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

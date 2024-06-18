@@ -4,11 +4,36 @@
              xmlns:local="clr-namespace:PM0220242P"
              x:Class="PM0220242P.App">
     <Application.Resources>
+        
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+
+        
+        <!-- Definición del estilo para Label 
+        <Style x:Key="labelStyle" TargetType="Label">
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="20,0,20,0" />
+            <Setter Property="VerticalOptions" Value="Start" />
+            <Setter Property="HorizontalOptions" Value="Start" />
+        </Style>
+
+  
+        <Style x:Key="buttonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="BlueViolet" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="20,0,20,0" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="Center" />
+        
+        
+        </Style>
+        -->
     </Application.Resources>
 </Application>

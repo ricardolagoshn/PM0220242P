@@ -32,7 +32,7 @@
         <Label Text="Telefono" Margin="20,0,20,0" VerticalOptions="Start" HorizontalOptions="Start"/>
         <Entry Text="{Binding Persona.Telefono}"  Margin="20,0,20,0" x:Name="Telefono" />
 
-        <Button x:Name="btnaceptar" Text="Aceptar" Background="BlueViolet" TextColor="White" Clicked="btnaceptar_Clicked" />
+        <Button x:Name="btnaceptar" Text="Aceptar" Background="BlueViolet" TextColor="White" Clicked="btnaceptar_Clicked"  />
 
 
     </VerticalStackLayout>

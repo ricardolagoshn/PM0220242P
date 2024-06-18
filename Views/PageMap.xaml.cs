@@ -1,8 +1,8 @@
 namespace PM0220242P.Views;
 
-public partial class NewPage1 : ContentPage
+public partial class PageMap : ContentPage
 {
-	public NewPage1()
+	public PageMap()
 	{
 		InitializeComponent();
 	}
